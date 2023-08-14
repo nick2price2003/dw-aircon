@@ -20,7 +20,7 @@ const Header = () => {
             <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a className="btn-getstarted" href="index.html#contact">Get a Quote</a>
+        <a className="btn-getstarted" href="index.html#about">Get a Quote</a>
 
         </div>
     </header>

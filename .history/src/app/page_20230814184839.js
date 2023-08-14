@@ -41,33 +41,33 @@ export default function Home() {
                 <div className="callback-box bg-light p-4">
                   <h3 className="mb-3">Request a Callback</h3>
                   <div>
-                  <form method="post">
-                      <label htmlFor="fullname" className="form-label mb-3">
+                  {/* <form action="submit_callback.php" method="post">
+                      <label htmlFor="name" className="form-label mb-3">
                         Name:
                       </label>
                       <input
                         type="text"
                         className="form-control mb-3"
-                        id="fullname"
-                        name="fullname"
+                        id="name"
+                        name="name"
                         required
-                      ></input>
+                      />
 
-                      <label htmlFor="phonenumber" className="form-label mb-3">
+                      <label htmlFor="phone" className="form-label mb-3">
                         Phone Number:
                       </label>
                       <input
                         type="tel"
                         className="form-control mb-3"
-                        id="phonenumber"
-                        name="phonenumber"
+                        id="phone"
+                        name="phone"
                         required
-                      ></input>
+                      />
 
                     <button type="submit" className="btn btn-primary btn-submit">
                       Submit
                     </button>
-                  </form>
+                  </form> */}
                   </div>
                 </div>
               </div>
@@ -391,6 +391,7 @@ export default function Home() {
 
               <div className="col-lg-6">
                 <form
+                  action="forms/contact.php"
                   method="post"
                   className="php-email-form"
                   data-aos="fade-up"
@@ -400,7 +401,7 @@ export default function Home() {
                     <div className="col-md-6">
                       <input
                         type="text"
-                        name="fullname"
+                        name="name"
                         className="form-control"
                         required
                       />
@@ -410,7 +411,7 @@ export default function Home() {
                       <input
                         type="email"
                         className="form-control"
-                        name="emailAdd"
+                        name="email"
                         required
                       />
                     </div>
@@ -427,7 +428,7 @@ export default function Home() {
                     <div className="col-md-12">
                       <select
                         className="form-select"
-                        aria-label="Default select"
+                        aria-label="Default select example"
                       >
                         <option selected>Quote</option>
                         <option value="1">One</option>
@@ -443,16 +444,6 @@ export default function Home() {
                         rows="6"
                         required
                       ></textarea>
-                    </div>
-
-                    <div className="col-md-12 text-center">
-                      <div className="loading">Loading</div>
-                      <div className="error-message"></div>
-                      <div className="sent-message">
-                        Your message has been sent. Thank you!
-                      </div>
-
-                      <button type="submit">Send Message</button>
                     </div>
                   </div>
                 </form>

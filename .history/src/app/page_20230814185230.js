@@ -400,7 +400,7 @@ export default function Home() {
                     <div className="col-md-6">
                       <input
                         type="text"
-                        name="fullname"
+                        name="name"
                         className="form-control"
                         required
                       />
@@ -410,7 +410,7 @@ export default function Home() {
                       <input
                         type="email"
                         className="form-control"
-                        name="emailAdd"
+                        name="email"
                         required
                       />
                     </div>
@@ -427,7 +427,7 @@ export default function Home() {
                     <div className="col-md-12">
                       <select
                         className="form-select"
-                        aria-label="Default select"
+                        aria-label="Default select example"
                       >
                         <option selected>Quote</option>
                         <option value="1">One</option>

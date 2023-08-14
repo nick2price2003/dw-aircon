@@ -41,33 +41,33 @@ export default function Home() {
                 <div className="callback-box bg-light p-4">
                   <h3 className="mb-3">Request a Callback</h3>
                   <div>
-                  <form method="post">
-                      <label htmlFor="fullname" className="form-label mb-3">
+                  {/* <form action="submit_callback.php" method="post">
+                      <label htmlFor="name" className="form-label mb-3">
                         Name:
                       </label>
                       <input
                         type="text"
                         className="form-control mb-3"
-                        id="fullname"
-                        name="fullname"
+                        id="name"
+                        name="name"
                         required
-                      ></input>
+                      />
 
-                      <label htmlFor="phonenumber" className="form-label mb-3">
+                      <label htmlFor="phone" className="form-label mb-3">
                         Phone Number:
                       </label>
                       <input
                         type="tel"
                         className="form-control mb-3"
-                        id="phonenumber"
-                        name="phonenumber"
+                        id="phone"
+                        name="phone"
                         required
-                      ></input>
+                      />
 
                     <button type="submit" className="btn btn-primary btn-submit">
                       Submit
                     </button>
-                  </form>
+                  </form> */}
                   </div>
                 </div>
               </div>
@@ -361,6 +361,23 @@ export default function Home() {
                     <div
                       className="info-item"
                       data-aos="fade"
+                      data-aos-delay="200"
+                    >
+                      <i>
+                        <FontAwesomeIcon icon={faLocationDot} />
+                      </i>{" "}
+                      <h3>Address</h3>
+                      <p>A108 Adam Street</p>
+                      <p>London, N2 4SS</p>
+                    </div>
+                  </div>
+
+                
+
+                  <div className="col-md-6">
+                    <div
+                      className="info-item"
+                      data-aos="fade"
                       data-aos-delay="400"
                     >
                       <i>
@@ -390,7 +407,8 @@ export default function Home() {
               </div>
 
               <div className="col-lg-6">
-                <form
+                {/* <form
+                  action="forms/contact.php"
                   method="post"
                   className="php-email-form"
                   data-aos="fade-up"
@@ -400,8 +418,9 @@ export default function Home() {
                     <div className="col-md-6">
                       <input
                         type="text"
-                        name="fullname"
+                        name="name"
                         className="form-control"
+                        placeholder="Your Name"
                         required
                       />
                     </div>
@@ -410,7 +429,8 @@ export default function Home() {
                       <input
                         type="email"
                         className="form-control"
-                        name="emailAdd"
+                        name="email"
+                        placeholder="Your Email"
                         required
                       />
                     </div>
@@ -420,6 +440,7 @@ export default function Home() {
                         type="text"
                         className="form-control"
                         name="subject"
+                        placeholder="Subject"
                         required
                       />
                     </div>
@@ -427,7 +448,7 @@ export default function Home() {
                     <div className="col-md-12">
                       <select
                         className="form-select"
-                        aria-label="Default select"
+                        aria-label="Default select example"
                       >
                         <option selected>Quote</option>
                         <option value="1">One</option>
@@ -441,6 +462,7 @@ export default function Home() {
                         className="form-control"
                         name="message"
                         rows="6"
+                        placeholder="Message"
                         required
                       ></textarea>
                     </div>
@@ -455,7 +477,7 @@ export default function Home() {
                       <button type="submit">Send Message</button>
                     </div>
                   </div>
-                </form>
+                </form> */}
               </div>
             </div>
           </div>

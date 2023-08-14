@@ -427,7 +427,7 @@ export default function Home() {
                     <div className="col-md-12">
                       <select
                         className="form-select"
-                        aria-label="Default select"
+                        aria-label="Default select example"
                       >
                         <option selected>Quote</option>
                         <option value="1">One</option>

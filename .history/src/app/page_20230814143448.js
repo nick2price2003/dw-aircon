@@ -1,5 +1,4 @@
-'use client'
-
+"use client";
 import React, { useEffect } from "react";
 import Header from "@/components/Header";
 import AOS from "aos";
@@ -25,11 +24,11 @@ export default function Home() {
     <>
       <Header />
       <main>
-        <section id="hero" className="hero">
+        <section id="hero" class="hero">
           <img src="assets/hero.png" alt="" />
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-8">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
                 <h2 data-aos="fade-up" data-aos-delay="60">
                   49 Years Experience Providing <br /> HVAC Solutions
                 </h2>
@@ -37,38 +36,38 @@ export default function Home() {
                   Your Trusted Team for Air Conditioning and Heating Excellence
                 </p>
               </div>
-              <div className="col-lg-4">
-                <div className="callback-box bg-light p-4">
-                  <h3 className="mb-3">Request a Callback</h3>
-                  <div>
-                  {/* <form action="submit_callback.php" method="post">
-                      <label htmlFor="name" className="form-label mb-3">
+              <div class="col-lg-4">
+                <div class="callback-box bg-light p-4">
+                  <h3 class="mb-3">Request a Callback</h3>
+                  <form action="submit_callback.php" method="post">
+                      <label for="name" class="form-label mb-3">
                         Name:
                       </label>
                       <input
                         type="text"
-                        className="form-control mb-3"
+                        class="form-control mb-3"
                         id="name"
                         name="name"
                         required
                       />
 
-                      <label htmlFor="phone" className="form-label mb-3">
+                    <div class="mb-3">
+                      <label for="phone" class="form-label mb-3">
                         Phone Number:
                       </label>
                       <input
                         type="tel"
-                        className="form-control mb-3"
+                        class="form-control mb-3"
                         id="phone"
                         name="phone"
                         required
                       />
+                    </div>
 
-                    <button type="submit" className="btn btn-primary btn-submit">
+                    <button type="submit" class="btn btn-primary btn-submit">
                       Submit
                     </button>
-                  </form> */}
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -207,7 +206,7 @@ export default function Home() {
                 data-aos-delay="100"
               >
                 <div className="service-item d-flex">
-                  <div className="icon flex-shrink-0">
+                  <div class="icon flex-shrink-0">
                     <i>
                       <FontAwesomeIcon icon={faTemperatureHalf} />
                     </i>
@@ -230,7 +229,7 @@ export default function Home() {
                 data-aos-delay="200"
               >
                 <div className="service-item d-flex">
-                <div className="icon flex-shrink-0">
+                <div class="icon flex-shrink-0">
                     <i>
                       <FontAwesomeIcon icon={faTemperatureHalf} />
                     </i>
@@ -253,7 +252,7 @@ export default function Home() {
                 data-aos-delay="300"
               >
                 <div className="service-item d-flex">
-                <div className="icon flex-shrink-0">
+                <div class="icon flex-shrink-0">
                     <i>
                       <FontAwesomeIcon icon={faTemperatureHalf} />
                     </i>
@@ -276,7 +275,7 @@ export default function Home() {
                 data-aos-delay="400"
               >
                 <div className="service-item d-flex">
-                <div className="icon flex-shrink-0">
+                <div class="icon flex-shrink-0">
                     <i>
                       <FontAwesomeIcon icon={faTemperatureHalf} />
                     </i>
@@ -299,7 +298,7 @@ export default function Home() {
                 data-aos-delay="500"
               >
                 <div className="service-item d-flex">
-                <div className="icon flex-shrink-0">
+                <div class="icon flex-shrink-0">
                     <i>
                       <FontAwesomeIcon icon={faTemperatureHalf} />
                     </i>
@@ -324,7 +323,7 @@ export default function Home() {
                 data-aos-delay="600"
               >
                 <div className="service-item d-flex">
-                <div className="icon flex-shrink-0">
+                <div class="icon flex-shrink-0">
                     <i>
                       <FontAwesomeIcon icon={faTemperatureHalf} />
                     </i>
@@ -344,7 +343,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="stats" className="stats">
+        <section id="stats" class="stats">
           <img src="assets/2.jpg" alt="" data-aos="fade-in" />
         </section>
         <section id="contact" className="contact">
@@ -420,7 +419,7 @@ export default function Home() {
               </div>
 
               <div className="col-lg-6">
-                {/* <form
+                <form
                   action="forms/contact.php"
                   method="post"
                   className="php-email-form"
@@ -460,7 +459,7 @@ export default function Home() {
 
                     <div className="col-md-12">
                       <select
-                        className="form-select"
+                        class="form-select"
                         aria-label="Default select example"
                       >
                         <option selected>Quote</option>
@@ -490,7 +489,7 @@ export default function Home() {
                       <button type="submit">Send Message</button>
                     </div>
                   </div>
-                </form> */}
+                </form>
               </div>
             </div>
           </div>

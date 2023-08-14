@@ -1,5 +1,4 @@
 'use client'
-
 import React, { useEffect } from "react";
 
 import './globals.css'
@@ -15,9 +14,6 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-    useEffect(() => {
-      window.scroll(0, 0);
-    });
   
   return (
     <html lang="en">

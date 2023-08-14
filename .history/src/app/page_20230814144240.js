@@ -1,5 +1,4 @@
-'use client'
-
+"use client";
 import React, { useEffect } from "react";
 import Header from "@/components/Header";
 import AOS from "aos";
@@ -40,8 +39,7 @@ export default function Home() {
               <div className="col-lg-4">
                 <div className="callback-box bg-light p-4">
                   <h3 className="mb-3">Request a Callback</h3>
-                  <div>
-                  {/* <form action="submit_callback.php" method="post">
+                  <form action="submit_callback.php" method="post">
                       <label htmlFor="name" className="form-label mb-3">
                         Name:
                       </label>
@@ -67,8 +65,7 @@ export default function Home() {
                     <button type="submit" className="btn btn-primary btn-submit">
                       Submit
                     </button>
-                  </form> */}
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>

@@ -11,6 +11,7 @@ import {
   faWind,
   faFire,
   faTemperatureHalf,
+  faPhone,
   faEnvelope,
   faClock,
 } from "@fortawesome/free-solid-svg-icons";
@@ -20,6 +21,10 @@ export default function Home() {
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
+  useEffect(() => {
+    window.scroll(0, 0);
+  });
 
   useEffect(() => {
     AOS.init();

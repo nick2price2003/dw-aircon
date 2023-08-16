@@ -22,6 +22,10 @@ export default function Home() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
+    window.scroll(0, 0);
+  });
+
+  useEffect(() => {
     AOS.init();
   }, []);
   return (

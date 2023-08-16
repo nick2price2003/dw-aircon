@@ -428,9 +428,9 @@ export default function Home() {
                           type="text"
                           name="fullname"
                           className="form-control"
-                          value={fullname}
+                          value={email}
                           onChange={(e) => {
-                            setFullname(e.target.value);
+                            setEmail(e.target.value);
                           }}  
                           placeholder="Name"
                           required
@@ -480,11 +480,6 @@ export default function Home() {
                           rows="6"
                           placeholder="Message"
                           required
-                          value={message}
-                          onChange={(e) => {
-                            setMessage(e.target.value);
-                          }}  
-
                         ></textarea>
                       </div>
 

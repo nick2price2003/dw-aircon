@@ -480,11 +480,6 @@ export default function Home() {
                           rows="6"
                           placeholder="Message"
                           required
-                          value={message}
-                          onChange={(e) => {
-                            setMessage(e.target.value);
-                          }}  
-
                         ></textarea>
                       </div>
 

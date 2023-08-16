@@ -428,10 +428,6 @@ export default function Home() {
                           type="text"
                           name="fullname"
                           className="form-control"
-                          value={fullname}
-                          onChange={(e) => {
-                            setFullname(e.target.value);
-                          }}  
                           placeholder="Name"
                           required
                         />
@@ -442,10 +438,6 @@ export default function Home() {
                           type="email"
                           className="form-control"
                           name="emailAdd"
-                          value={email}
-                          onChange={(e) => {
-                            setEmail(e.target.value);
-                          }}  
                           placeholder="Email Address"
                           required
                         />
@@ -480,11 +472,6 @@ export default function Home() {
                           rows="6"
                           placeholder="Message"
                           required
-                          value={message}
-                          onChange={(e) => {
-                            setMessage(e.target.value);
-                          }}  
-
                         ></textarea>
                       </div>
 

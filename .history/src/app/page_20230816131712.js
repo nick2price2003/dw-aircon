@@ -480,7 +480,7 @@ export default function Home() {
                           rows="6"
                           placeholder="Message"
                           required
-                          value={message}
+                          value={email}
                           onChange={(e) => {
                             setMessage(e.target.value);
                           }}  

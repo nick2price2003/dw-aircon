@@ -61,7 +61,7 @@ export default function Home() {
                   alt=""
                 />
               </div>
-              <div className="col-xl-8 col-md-8 col-12 client-text">
+              <div className="col-xl-8 col-md-8 col-6 client-text">
                 <h2>F Gas Register Certified Engineer</h2>
                 <p>
                   Being an F Gas Register Certified Engineer signifies

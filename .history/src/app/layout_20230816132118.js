@@ -1,5 +1,3 @@
-'use client'
-
 import React from "react";
 import { HydrationProvider, Client } from "react-hydration-provider";
 

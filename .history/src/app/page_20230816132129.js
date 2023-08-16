@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Client } from "react-hydration-provider";
 import Header from "@/components/Header";
 import AOS from "aos";

@@ -24,7 +24,7 @@ export default function Home() {
   }, []);
   return (
     <>
-    <Client>
+    <Client></Client>
       <Header />
       <main>
         <section id="hero" className="hero">
@@ -43,9 +43,7 @@ export default function Home() {
                 <div className="callback-box bg-light p-4">
                   <h3 className="mb-3">Request a Callback</h3>
                   <div>
-                  <form name="dw-callback" method="POST" netlify="true" 
-                  netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded"
->
+                  <form method="post">
                       <label htmlFor="fullname" className="form-label mb-3">
                         Name:
                       </label>
@@ -54,7 +52,6 @@ export default function Home() {
                         className="form-control mb-3"
                         id="fullname"
                         name="fullname"
-                        placeholder="Name"
                         required
                       ></input>
 
@@ -66,7 +63,6 @@ export default function Home() {
                         className="form-control mb-3"
                         id="phonenumber"
                         name="phonenumber"
-                        placeholder="Phone Number"
                         required
                       ></input>
 
@@ -373,7 +369,8 @@ export default function Home() {
                         <FontAwesomeIcon icon={faEnvelope} />
                       </i>{" "}
                       <h3>Email Us</h3>
-                      <p>info@dw-aircon.co.uk</p>
+                      <p>info@example.com</p>
+                      <p>contact@example.com</p>
                     </div>
                   </div>
 
@@ -386,8 +383,9 @@ export default function Home() {
                       <i>
                         <FontAwesomeIcon icon={faClock} />
                       </i>{" "}
-                      <h3>Opening Hours</h3>
-                      <p>9:00AM - 6:00PM</p>
+                      <h3>Open Hours</h3>
+                      <p>Monday - Friday</p>
+                      <p>9:00AM - 05:00PM</p>
                     </div>
                   </div>
                 </div>
@@ -395,11 +393,10 @@ export default function Home() {
 
               <div className="col-lg-6">
                 <form
+                  method="post"
                   className="php-email-form"
                   data-aos="fade-up"
                   data-aos-delay="200"
-                  name="dw-contact" method="POST" netlify="true" 
-                  netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded"
                 >
                   <div className="row gy-4">
                     <div className="col-md-6">
@@ -407,7 +404,6 @@ export default function Home() {
                         type="text"
                         name="fullname"
                         className="form-control"
-                        placeholder="Name"
                         required
                       />
                     </div>
@@ -417,7 +413,6 @@ export default function Home() {
                         type="email"
                         className="form-control"
                         name="emailAdd"
-                        placeholder="Email Address"
                         required
                       />
                     </div>
@@ -427,12 +422,11 @@ export default function Home() {
                         type="text"
                         className="form-control"
                         name="subject"
-                        placeholder="Subject"
                         required
                       />
                     </div>
 
-                   {/*  <div className="col-md-12">
+                    <div className="col-md-12">
                       <select
                         className="form-select"
                         aria-label="Default select"
@@ -442,14 +436,13 @@ export default function Home() {
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                       </select>
-                    </div> */}
+                    </div>
 
                     <div className="col-md-12">
                       <textarea
                         className="form-control"
                         name="message"
                         rows="6"
-                        placeholder="Message"
                         required
                       ></textarea>
                     </div>
@@ -471,7 +464,6 @@ export default function Home() {
         </section>
       </main>
       <Footer />
-      </Client>
     </>
   );
 }

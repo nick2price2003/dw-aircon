@@ -43,9 +43,7 @@ export default function Home() {
                 <div className="callback-box bg-light p-4">
                   <h3 className="mb-3">Request a Callback</h3>
                   <div>
-                  <form name="dw-callback" method="POST" netlify="true" 
-                  netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded"
->
+                  <form method="post">
                       <label htmlFor="fullname" className="form-label mb-3">
                         Name:
                       </label>
@@ -386,8 +384,9 @@ export default function Home() {
                       <i>
                         <FontAwesomeIcon icon={faClock} />
                       </i>{" "}
-                      <h3>Opening Hours</h3>
-                      <p>9:00AM - 6:00PM</p>
+                      <h3>Open Hours</h3>
+                      <p>Monday - Friday</p>
+                      <p>9:00AM - 05:00PM</p>
                     </div>
                   </div>
                 </div>
@@ -395,11 +394,10 @@ export default function Home() {
 
               <div className="col-lg-6">
                 <form
+                  method="post"
                   className="php-email-form"
                   data-aos="fade-up"
                   data-aos-delay="200"
-                  name="dw-contact" method="POST" netlify="true" 
-                  netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded"
                 >
                   <div className="row gy-4">
                     <div className="col-md-6">

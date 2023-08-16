@@ -43,7 +43,7 @@ export default function Home() {
                 <div className="callback-box bg-light p-4">
                   <h3 className="mb-3">Request a Callback</h3>
                   <div>
-                  <form name="dw-callback" method="POST" netlify="true" 
+                  <form                   name="dw-contact" method="POST" netlify="true" 
                   netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded"
 >
                       <label htmlFor="fullname" className="form-label mb-3">

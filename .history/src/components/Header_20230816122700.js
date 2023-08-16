@@ -13,14 +13,14 @@ const Header = () => {
             <ul>
                 <li><a href="#hero" className="active">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
             </ul>
 
             <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a className="btn-getstarted" href="#contact">Get a Quote</a>
+        <a className="btn-getstarted" href="index.html#contact">Get a Quote</a>
 
         </div>
     </header>

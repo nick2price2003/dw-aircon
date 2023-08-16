@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect } from "react";
-import { HydrationProvider, Client } from "react-hydration-provider";
+import { HydrationProvider, Server, Client } from "react-hydration-provider";
 
 import './globals.css'
 import 'bootstrap/dist/css/bootstrap.css';

@@ -1,4 +1,5 @@
 import React from "react";
+import { Metadata } from 'next'
 
 import './globals.css'
 import 'bootstrap/dist/css/bootstrap.css';
@@ -11,7 +12,7 @@ export const metadata = {
   title: 'DW Air Conditioning & Heating Services',
   description: 'Air Conditioning & Heating Services Throughout London & Surrounding Areas',
   icons: {
-    icon: '/favicon.ico',
+    icon: '/icon.png',
   },
 }
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Metadata } from 'next'
 
 import './globals.css'
 import 'bootstrap/dist/css/bootstrap.css';
@@ -10,14 +11,13 @@ config.autoAddCss = false;
 export const metadata = {
   title: 'DW Air Conditioning & Heating Services',
   description: 'Air Conditioning & Heating Services Throughout London & Surrounding Areas',
-  icons: {
-    icon: '/favicon.ico',
-  },
 }
 
 export default function RootLayout({ children }) {  
   return (
     <html lang="en">
+      <link rel="icon" href="/favicon.ico" sizes="any" />
+
       <body className="index-page">{children}</body>
     </html>
   )

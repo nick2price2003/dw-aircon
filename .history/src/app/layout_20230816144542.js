@@ -1,4 +1,5 @@
 import React from "react";
+import { Metadata } from 'next'
 
 import './globals.css'
 import 'bootstrap/dist/css/bootstrap.css';

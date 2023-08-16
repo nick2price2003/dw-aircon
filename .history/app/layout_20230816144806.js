@@ -1,8 +1,8 @@
+import React from "react";
+
 import './globals.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import "@fortawesome/fontawesome-svg-core/styles.css"; 
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false; 
@@ -18,11 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {  
   return (
     <html lang="en">
-      <body className="index-page">
-      <Header />
-      {children}
-      <Footer />
-      </body>
+      <body className="index-page">{children}</body>
     </html>
   )
 }

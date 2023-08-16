@@ -1,3 +1,8 @@
+"use client";
+
+import React, { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFan,
@@ -11,6 +16,16 @@ import CallBack from "@/components/CallBack";
 import Contact from "@/components/Contact";
 
 export default function Home() {
+  const [showChild, setShowChild] = useState(false)
+
+  useEffect(() => {
+    AOS.init();
+    setShowChild(true)
+  }, [])
+
+  if (!showChild) {
+    return null
+  }
   return (
     <>
       <main>

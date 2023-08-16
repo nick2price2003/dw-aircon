@@ -48,6 +48,7 @@ const Contact = () => {
             type="text"
             className="form-control"
             name="subject"
+            placeholder="Subject"
             required
           />
         </div>
@@ -57,6 +58,7 @@ const Contact = () => {
             className="form-control"
             name="message"
             rows="6"
+            placeholder="Message"
             required
             value={message}
             onChange={(e) => {
@@ -66,6 +68,12 @@ const Contact = () => {
         </div>
 
         <div className="col-md-12 text-center">
+          <div className="loading">Loading</div>
+          <div className="error-message"></div>
+          <div className="sent-message">
+            Your message has been sent. Thank you!
+          </div>
+
           <button type="submit">Send Message</button>
         </div>
       </div>

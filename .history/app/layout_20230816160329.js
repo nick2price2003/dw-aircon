@@ -1,3 +1,5 @@
+import React from "react";
+
 import './globals.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import "@fortawesome/fontawesome-svg-core/styles.css"; 

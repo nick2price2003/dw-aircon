@@ -22,6 +22,7 @@ const CallBack = () => {
           className="form-control mb-3"
           id="fullname"
           name="fullname"
+          placeholder="Name"
           value={fullname}
           onChange={(e) => {
             setFullname(e.target.value);
@@ -37,6 +38,7 @@ const CallBack = () => {
           className="form-control mb-3"
           id="phonenumber"
           name="phonenumber"
+          placeholder="Phone Number"
           value={phonenumber}
           onChange={(e) => {
             setPhoneNumber(e.target.value);

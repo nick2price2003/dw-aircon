@@ -88,7 +88,7 @@ export default function Home() {
                 <p>
                   Boasting an impressive 49 years of unwavering experience
                   in the field, our commitment to excellence shines through
-                  in every project we undertake. As distinguished F Gas
+                  in every project we undertake. As a distinguished F Gas
                   Register Certified Engineers, we have honed our expertise
                   over the decades, ensuring that each endeavor is marked by
                   precision and innovation. Recognizing the individuality of

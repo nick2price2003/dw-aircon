@@ -14,7 +14,7 @@ const CallBack = () => {
       encType="application/x-www-form-urlencoded"
     >
       <input type="hidden" name="form-name" value="dw-callback" />
-      <label htmlFor="fullname" className="form-label mb-3">
+      <label for="fullname" className="form-label mb-3">
         Name:
       </label>
       <input
@@ -28,9 +28,9 @@ const CallBack = () => {
           setFullname(e.target.value);
         }}
         required
-      />
+      ></input>
 
-      <label htmlFor="phonenumber" className="form-label mb-3">
+      <label for="phonenumber" className="form-label mb-3">
         Phone Number:
       </label>
       <input
@@ -44,7 +44,7 @@ const CallBack = () => {
           setPhoneNumber(e.target.value);
         }}
         required
-      />
+      ></input>
 
       <button type="submit" className="btn btn-primary btn-submit">
         Submit

@@ -47,7 +47,7 @@ export default function Home() {
                   <div className="col-lg-4">
                     <div className="callback-box bg-light p-4">
                       <h3 className="mb-3">Request a Callback</h3>
-                       <CallBack />
+                       <CallBack>
                     </div>
                   </div>
                 </div>

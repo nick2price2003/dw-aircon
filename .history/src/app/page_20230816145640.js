@@ -17,6 +17,9 @@ import {
 import Footer from "@/components/Footer";
 
 export default function Home() {
+  const [fullname, setFullname] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   useEffect(() => {
     AOS.init();
@@ -46,7 +49,6 @@ export default function Home() {
                       <div>
                         <form
                           name="dw-callback"
-                          method="POST" 
                           netlify
                           netlify-honeypot="bot-field"
                         >
@@ -426,7 +428,7 @@ export default function Home() {
                   </div>
 
                   <div className="col-lg-6">
-                    {/* <form
+                    <form
                       className="php-email-form"
                       name="dw-contact"
                       method="POST"
@@ -501,7 +503,7 @@ export default function Home() {
                           <button type="submit">Send Message</button>
                         </div>
                       </div>
-                    </form> */}
+                    </form>
                   </div>
                 </div>
               </div>

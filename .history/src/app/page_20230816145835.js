@@ -17,6 +17,9 @@ import {
 import Footer from "@/components/Footer";
 
 export default function Home() {
+  const [fullname, setFullname] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   useEffect(() => {
     AOS.init();

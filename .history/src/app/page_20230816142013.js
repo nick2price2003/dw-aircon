@@ -437,6 +437,8 @@ export default function Home() {
                   <div className="col-lg-6">
                     <form
                       className="php-email-form"
+                      data-aos="fade-up"
+                      data-aos-delay="200"
                       name="dw-contact"
                       method="POST"
                       data-netlify="true"

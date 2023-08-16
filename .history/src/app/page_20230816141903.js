@@ -56,7 +56,7 @@ export default function Home() {
                         <form
                           name="dw-callback"
                           method="POST"
-                          data-netlify="true"
+                          netlify="true"
                           netlify-honeypot="bot-field"
                         >
                           <input
@@ -437,9 +437,11 @@ export default function Home() {
                   <div className="col-lg-6">
                     <form
                       className="php-email-form"
+                      data-aos="fade-up"
+                      data-aos-delay="200"
                       name="dw-contact"
                       method="POST"
-                      data-netlify="true"
+                      netlify="true"
                       netlify-honeypot="bot-field"
                     >
                       <div className="row gy-4">

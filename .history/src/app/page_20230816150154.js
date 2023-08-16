@@ -49,8 +49,7 @@ export default function Home() {
                       <div>
                         <form
                           name="dw-callback"
-                          method="POST" 
-                          netlify
+                          method="POST" netlify
                           netlify-honeypot="bot-field"
                         >
                           <input

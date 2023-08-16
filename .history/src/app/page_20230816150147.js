@@ -429,7 +429,7 @@ export default function Home() {
                   </div>
 
                   <div className="col-lg-6">
-                    <form
+                    {/* <form
                       className="php-email-form"
                       name="dw-contact"
                       method="POST"
@@ -504,7 +504,7 @@ export default function Home() {
                           <button type="submit">Send Message</button>
                         </div>
                       </div>
-                    </form>
+                    </form> */}
                   </div>
                 </div>
               </div>

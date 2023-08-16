@@ -47,9 +47,9 @@ const CallBack = () => {
       id="phonenumber"
       name="phonenumber"
       placeholder="Phone Number"
-      value={phonenumber}
+      value={email}
       onChange={(e) => {
-        setPhoneNumber(e.target.value);
+        set(e.target.value);
       }}
       required
     ></input>

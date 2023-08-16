@@ -5,6 +5,7 @@ import React, { useState } from "react";
 const CallBack = () => {
     const [fullname, setFullname] = useState("");
     const [phonenumber, setPhoneNumber] = useState("");
+    const [message, setMessage] = useState("");
   
   return (
     <form
@@ -28,10 +29,6 @@ const CallBack = () => {
       id="fullname"
       name="fullname"
       placeholder="Name"
-      value={fullname}
-      onChange={(e) => {
-        setFullname(e.target.value);
-      }}
       required
     ></input>
 
@@ -47,10 +44,6 @@ const CallBack = () => {
       id="phonenumber"
       name="phonenumber"
       placeholder="Phone Number"
-      value={phonenumber}
-      onChange={(e) => {
-        setPhoneNumber(e.target.value);
-      }}
       required
     ></input>
 

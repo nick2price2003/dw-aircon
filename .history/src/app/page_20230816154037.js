@@ -15,20 +15,15 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Footer from "@/components/Footer";
 import CallBack from "@/components/CallBack";
-import Contact from "@/components/Contact";
 
 export default function Home() {
-  const [showChild, setShowChild] = useState(false)
+  const [fullname, setFullname] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   useEffect(() => {
     AOS.init();
-
-    setShowChild(true)
-  }, [])
-
-  if (!showChild) {
-    return null
-  }
+  }, []);
   return (
     <>
           <Header />
@@ -386,7 +381,7 @@ export default function Home() {
                   </div>
 
                   <div className="col-lg-6">
-                    <Contact />
+                    <>
                   </div>
                 </div>
               </div>

@@ -18,17 +18,10 @@ import CallBack from "@/components/CallBack";
 import Contact from "@/components/Contact";
 
 export default function Home() {
-  const [showChild, setShowChild] = useState(false)
 
   useEffect(() => {
     AOS.init();
-
-    setShowChild(true)
-  }, [])
-
-  if (!showChild) {
-    return null
-  }
+  }, []);
   return (
     <>
           <Header />

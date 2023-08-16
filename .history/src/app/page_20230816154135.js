@@ -15,20 +15,13 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Footer from "@/components/Footer";
 import CallBack from "@/components/CallBack";
-import Contact from "@/components/Contact";
+import Contact from "@/components/CallBack";
 
 export default function Home() {
-  const [showChild, setShowChild] = useState(false)
 
   useEffect(() => {
     AOS.init();
-
-    setShowChild(true)
-  }, [])
-
-  if (!showChild) {
-    return null
-  }
+  }, []);
   return (
     <>
           <Header />

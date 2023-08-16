@@ -22,13 +22,7 @@ export default function Home() {
 
   useEffect(() => {
     AOS.init();
-
-    setShowChild(true)
-  }, [])
-
-  if (!showChild) {
-    return null
-  }
+  }, []);
   return (
     <>
           <Header />

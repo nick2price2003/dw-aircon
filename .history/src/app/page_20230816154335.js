@@ -29,6 +29,10 @@ export default function Home() {
   if (!showChild) {
     return null
   }
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
           <Header />

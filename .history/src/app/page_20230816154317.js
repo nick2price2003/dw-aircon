@@ -21,14 +21,12 @@ export default function Home() {
   const [showChild, setShowChild] = useState(false)
 
   useEffect(() => {
-    AOS.init();
-
     setShowChild(true)
   }, [])
-
-  if (!showChild) {
-    return null
-  }
+  
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
           <Header />

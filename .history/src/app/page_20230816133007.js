@@ -32,6 +32,8 @@ export default function Home() {
   }, []);
   return (
     <>
+          <HydrationProvider>
+
       <Client>
         <Header />
         <main>

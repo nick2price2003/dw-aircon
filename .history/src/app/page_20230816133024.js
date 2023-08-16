@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { Client } from "react-hydration-provider";
+import {       <HydrationProvider>
+,   Client } from "react-hydration-provider";
 import Header from "@/components/Header";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -32,6 +33,8 @@ export default function Home() {
   }, []);
   return (
     <>
+          <HydrationProvider>
+
       <Client>
         <Header />
         <main>
@@ -509,6 +512,7 @@ export default function Home() {
         </main>
         <Footer />
       </Client>
+      </HydrationProvider>
     </>
   );
 }

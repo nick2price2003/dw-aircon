@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { useEffect, useState } from "react";
 import { HydrationProvider, Client } from "react-hydration-provider";
